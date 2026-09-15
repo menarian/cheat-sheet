@@ -1,0 +1,70 @@
+.header {
+    text-align: center;
+}
+
+body {
+    background-color: lightgray;
+}
+.page-description p {
+    border: 1px solid black;
+    padding: 5px;
+    width: 50%;
+    margin: auto;
+}
+
+.tables {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    margin: 10px 20px;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 2px solid black;
+    min-width: 25%;
+    max-width: 50%;
+    padding: 10px 20px;
+    margin: 10px 20px;
+}
+
+thead {
+    background-color: rgb(110, 153, 211);
+}
+
+thead > tr:nth-of-type(1) {
+    font-size: 18px;
+    background-color: rgb(234, 171, 54);
+}
+
+thead > tr:nth-of-type(2) {
+    border-bottom: 2px solid black;
+}
+
+tbody > tr > th, td {
+    text-align: left;
+}
+
+tbody > tr > td {
+    min-width: 50px;
+    max-width: 300px;
+    max-height: 30px;
+    overflow-wrap: break-word;
+}
+
+tbody > tr > td:nth-of-type(2) {
+    width: 100px;
+}
+
+th,
+td {
+    border: 1px solid black;
+    padding: 5px 10px;
+}
+
+
+
+tbody > tr:nth-of-type(odd) {
+  background-color: rgb(237 238 242);
+}
