@@ -47,7 +47,8 @@ thead > tr:nth-of-type(2) {
     border-bottom: 2px solid black;
 }
 
-tbody > tr > th, td {
+tbody > tr > th,
+tbody > tr > td {
     text-align: left;
 }
 
@@ -58,12 +59,17 @@ tbody > tr > td {
     overflow-wrap: break-word;
 }
 
-tbody > tr > td:nth-of-type(2) {
+.code {
+    font-family: monospace;
+    background-color: bisque;
+}
+
+table.html-semantics > tbody > tr > td:nth-of-type(2) {
     width: 100px;
 }
 
-th,
-td {
+table.html-semantics th,
+table.html-semantics td {
     border: 1px solid black;
     padding: 5px 10px;
 }
