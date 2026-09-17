@@ -1,4 +1,4 @@
-.header {
+header {
     text-align: center;
 }
 
@@ -18,10 +18,8 @@ a:hover {
 }
 
 .tables {
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
-    margin: 10px 20px;
+    display: block;
+    justify-items: center;
 }
 
 table {
@@ -64,12 +62,20 @@ tbody > tr > td {
     background-color: bisque;
 }
 
-table.html-semantics > tbody > tr > td:nth-of-type(2) {
-    width: 100px;
+/* .html-tables > tbody > tr > th,
+.html-tables > tbody > tr > td {
+    border-bottom: 1px solid black;
+    background-color: yellow;
+    padding: auto 2px;
+} */
+
+table.html-semantics > tbody > tr > td {
+    min-width: 300px;
+    max-width: 500px;
 }
 
-table.html-semantics th,
-table.html-semantics td {
+table th,
+table td {
     border: 1px solid black;
     padding: 5px 10px;
 }
