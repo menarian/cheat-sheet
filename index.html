@@ -3,7 +3,7 @@
     <head>
         <link href="./resources/css/style.css" rel="stylesheet">
         <title>Menarian's CSS Properties Cheat Sheet</title>
-        <link href="./resources/images/favicon.webp">
+        <link rel="icon" href="./resources/images/favicon.webp">
     </head>
     <body>
         <header>
@@ -14,8 +14,7 @@
             <p>This page will list different HTML and CSS properties, elements and selectors which might be useful to remember or ones which I have struggles with to remember.</p>
         </div>
 
-        <div class="tables">
-
+        <div class="container">
             <table class="html-semantics">
                 <thead>
                     <tr>
@@ -133,48 +132,59 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <th scope="row"><span class="code">&lt;table&gt;</th>
+                        <th scope="row"><span class="code">&lt;table&gt;</span></th>
                         <td>Table</td>
                         <td>The wrapper element for all HTML tables.</td>
                     </tr>
                     <tr>
-                        <th scope="row"><span class="code">&lt;thead&gt;</th>
+                        <th scope="row"><span class="code">&lt;thead&gt;</span></th>
                         <td>Table Head</td>
                         <td>The set of rows defining the column headers in a table.</td>
                     </tr>
                     <tr>
-                        <th scope="row"><span class="code">&lt;tbody&gt;</th>
+                        <th scope="row"><span class="code">&lt;tbody&gt;</span></th>
                         <td>Table Body</td>
                         <td>The set of rows containing actual table data.</td>
                     </tr>
                     <tr>
-                        <th scope="row"><span class="code">&lt;tr&gt;</th>
+                        <th scope="row"><span class="code">&lt;tr&gt;</span></th>
                         <td>Table Row</td>
                         <td>The table row container.</td>
                     </tr>
                     <tr>
-                        <th scope="row"><span class="code">&lt;td&gt;</th>
+                        <th scope="row"><span class="code">&lt;td&gt;</span></th>
                         <td>Table Data</td>
                         <td>The table row container.</td>
                     </tr>
                     <tr>
-                        <th scope="row"><span class="code">&lt;tfoot&gt;</th>
+                        <th scope="row"><span class="code">&lt;tfoot&gt;</span></th>
                         <td>Table Foot</td>
                         <td>The set of rows defining the footer in a table.</td>
                     </tr>
                 </tbody>
             </table>
-            </div>
 
-        <div class="flexbox">
-            <div class="container">
-                <h1>Flexbox</h1>
-                <div id="flex-example">
-                    <p>1</p>
-                    <p>2</p>
-                    <p>3</p>
-                </div>
+            <div class="flex">
+                <h2>Flexbox common attributes and default values</h2>
             </div>
+            <p>When you assign the value <em>display: flex</em> to an element, it will become a <em>flex container</em>. All of its children (but not the children's children) will become <em>flex items</em>.</p>
+            <p>The following attributes will be the <em>default</em>:
+                <ul id="flex-default">
+                    <li>flex-direction: row;</li>
+                    <li>flex-wrap: nowrap;</li>
+                    <li>justify-content: flex-start;</li>
+                    <li>align-items: normal; <p class="comment">behaves like stretch</p></li>
+                    <li>align-content: normal; <p class="comment">behaves like stretch</p></li>
+                    <li>gap: normal; <p class="comment">basically 0 flex layout</p></li>
+                </ul>
+            </p>
+            <p>In addition to that, these child flex items have their own default values:
+                <ul>
+                    <li>flex: 0 1 auto;</li>
+                    <li>align-self: auto;</li>
+                    <li>order: 0;</li>
+                </ul>
+            </p>
         </div>
     </body>
 </html>
