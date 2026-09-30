@@ -88,3 +88,13 @@ tbody > tr:nth-of-type(odd) {
 ul {
     margin: 5px;
 }
+
+.flex {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.flex h2 {
+    justify-self: center;
+}
